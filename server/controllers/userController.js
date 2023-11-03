@@ -27,7 +27,7 @@ module.exports = {
     editTask: async (req, res, next) => {
         const { isCompleted, taskName, taskDetail, userId, taskId } = req.body;
 
-        console.log(req.body)
+        // console.log(req.body)
         await taskModel.findOneAndUpdate(
             { userId, _id: taskId },
             { $set: { isCompleted, taskName, taskDetail } },

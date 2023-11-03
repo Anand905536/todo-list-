@@ -8,8 +8,8 @@ This is a CRUD (Create, Read, Update, Delete) application developed using the ME
   - **Login Page**: Users can log in using their email and password.
   - **Register Page**: New users can create an account by providing their email and password.
   - **Demo Credentials**: If you don't want to register, you can use these credentials to login:
-    - Email: admin@gmail.com  <span style="background-color: #007acc; color: white; padding: 0.2rem 0.5rem;">localhost:3000</span>
-    - Password: admin@12345   <span style="background-color: #007acc; color: white; padding: 0.2rem 0.5rem;">localhost:4004</span>
+    - Email: `admin@gmail.com `
+    - Password:` admin@12345 ` 
     
  *for running locally:*
  Use the following commands:

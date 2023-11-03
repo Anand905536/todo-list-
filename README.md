@@ -6,7 +6,7 @@ This is a CRUD (Create, Read, Update, Delete) application developed using the ME
   
 - **User Authentication**:
   - **Login Page**: Users can log in using their email and password.
-  - **Register Page**: New users can create an account by providing their email and password.
+  - **Register Page**: New users can create an account by providing their email,password,name and phone
   - **Demo Credentials**: If you don't want to register, you can use these credentials to login:
     - Email: `admin@gmail.com `
     - Password:` admin@12345 ` 

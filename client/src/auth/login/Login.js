@@ -25,7 +25,12 @@ function Login() {
             ).then((res) => {
                 console.log(res)
                 if (res.data.status === 1) {
-
+                    localStorage.setItem("permission",true)
+                    localStorage.setItem("userId",res.data.userId)
+                    setTimeout(()=>{
+                      navigate('/dashboard')
+                      message.success("successfully logged in")
+                    },2000)
                 }
                 else {
                     message.error("Wrong Credentials")

@@ -3,7 +3,7 @@ import Login from './auth/login/Login'
 import Register from './auth/register/Register';
 import Wrong from './404/Wrong';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Default from './routes/Default';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
-        <Route path="*" element={<Wrong/>}/>
+        <Route path="*" element={<Default/>}/>
       </Routes>
     </div>
   );

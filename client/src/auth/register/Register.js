@@ -37,7 +37,7 @@ function BasicExample() {
                     message.success("Successfully registered")
                     setTimeout(() => {
                         navigate("/")
-                    }, 4000)
+                    }, 2000)
                 }
                 else {
                     message.error("Email already exist")

@@ -6,7 +6,6 @@ module.exports = {
     register: async (req, res, next) => {
         const { name, email, phone, password } = req.body
         const findEmail = await userModel.find({ email: email })
-        // console.log(findEmail)
         if (findEmail.length > 0) {
             res.status(200).send({ data: "already registered", status: 0 })
         }
@@ -26,7 +25,8 @@ module.exports = {
         const userData = await userModel.find({ email: email })
         console.log(userData)
         if (userData.length > 0 && userData[0].password === password) {
-            res.status(200).send({ data: "successfully logged in", status: 1 })
+            const userId = userData[0]._id.toString();
+            res.status(200).send({ data: "successfully logged in", status: 1, userId: userId })
         }
         else {
             res.status(200).send({ data: "incorrect username or password", status: 0 })
